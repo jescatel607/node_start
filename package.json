@@ -4,8 +4,13 @@
   "description": "7/28/2025\r last we left off was in part 3. Got node.js installed but the part I'm confused on in this step \"Next, you will need to open your index.js file and set up the code so that you can get your first server up and running.\" this section.",
   "main": "scripts.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   },
   "repository": {
     "type": "git",
@@ -17,9 +22,5 @@
   "bugs": {
     "url": "https://github.com/jescatel607/Nodejs-project/issues"
   },
-  "homepage": "https://github.com/jescatel607/Nodejs-project#readme",
-  "dependencies": {
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10"
-  }
+  "homepage": "https://github.com/jescatel607/Nodejs-project#readme"
 }

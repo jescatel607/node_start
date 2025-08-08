@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use("/", require("./routes"));
+app.get("/", (req, res) => {
+  res.send("Welcome to the Test Server!");
+});
 
 app.listen(port, () => {
-  console.log(`Test server running on port http://localhost:${port}`);
+  console.log(`Testing server running on port http://localhost:${port}`);
 });
